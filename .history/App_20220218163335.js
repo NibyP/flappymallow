@@ -13,7 +13,7 @@ export default function App() {
     setRunning(false)
   },[])
   return (
-    <View style={{flex:1,backgroundColor:'skyblue'}}>
+    <View style={{flex:1}}>
       <Text style={{ textAlign: 'center', color: 'green', fontWeight: 'bold', fontSize: 40, margin: 20,  }}>{currentPoints}</Text>
       <GameEngine
         ref={(ref) => {setgameEngine(ref)}}
@@ -40,13 +40,8 @@ export default function App() {
 
       { !running ?
         <View style={{ flex:1, justifyContent:'center', alignItems:'center' }}>
-            <TouchableOpacity style={{ backgroundColor: 'green', paddingHorizontal: 30, paddingVertical: 10 }}
-            onPress={()=> {
-              setRunning(true)
-              gameEngine.swap(entities())
-            }}
-            >
-              <Text style={{ fontWeight:'bold', color:'white',fontSize:25 }}>START GAME</Text>
+            <TouchableOpacity style={{ backgroundColor: 'black', paddingHorizontal: 30, paddingVertical: 10 }}>
+              <Text style={{ fontWeight:'bold', color:'white',fontSize:40 }}>START GAME</Text>
             </TouchableOpacity>
         </View>
         : null }

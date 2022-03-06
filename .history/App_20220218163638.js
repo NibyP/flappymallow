@@ -13,7 +13,7 @@ export default function App() {
     setRunning(false)
   },[])
   return (
-    <View style={{flex:1,backgroundColor:'skyblue'}}>
+    <View style={{flex:1}}>
       <Text style={{ textAlign: 'center', color: 'green', fontWeight: 'bold', fontSize: 40, margin: 20,  }}>{currentPoints}</Text>
       <GameEngine
         ref={(ref) => {setgameEngine(ref)}}
