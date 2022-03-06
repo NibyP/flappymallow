@@ -1,6 +1,6 @@
 # FlappyMallow
 A classy game with flappy mallows.
-Built with **React Native**
+Built with **React Native**.
 A clone of the famous and classic mobile game Flappy Bird, made with React Native w/ Expo
 # About
 A simple 2D game with react native. This repo was created as a part of my journey of learning react native, expo, react native game engine and Matterjs.
